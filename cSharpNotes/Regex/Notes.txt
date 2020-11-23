@@ -1,0 +1,9 @@
+﻿// 1RegexBasics.cs
+.Net types support regular expressions based on Perl 5 regular expressions and supports
+- Search functionality
+- Search/Replace functionality
+
+
+
+
+
