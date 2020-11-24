@@ -1,12 +1,14 @@
 ﻿using System;
 
-namespace Regex
+namespace RegexExamples
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //RegexBasics.Ex1_Quantifier();
+            RegexBasics.Ex2_Regex_MulipleMatch();
+            Console.ReadLine();
         }
     }
 }
