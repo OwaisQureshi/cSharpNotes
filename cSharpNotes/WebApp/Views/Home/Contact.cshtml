@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+@section scripts {
+    <script src="~/Scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.signalR-2.4.1.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            var con = $.connection("/echo");
+            con.start();
+            con.send("Kese ho bhai");
+
+            //con.start(function () {
+            //    //connection established
+            //    con.send("Ab paka hai, baat agaya jaegi");
+            //}
+            //);
+        });
+    </script>
+}
+
+<address>
+    One Microsoft Way<br />
+    Redmond, WA 98052-6399<br />
+    <abbr title="Phone">P:</abbr>
+    425.555.0100
+</address>
+
+<address>
+    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>
+
